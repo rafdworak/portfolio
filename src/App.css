@@ -3,21 +3,28 @@
 #section-portfolio {
   background: url('./img/SW2.jpg');
   background-size: cover;
+  max-width: 100%;
+
 }
 
 #section-about {
   background: url('./img/SW.jpg');
   background-size: cover;
+  max-width: 100%;
+
 }
 
 #section-portfolio {
   background: url('./img/SW2.jpg');
   background-size: cover;
+  max-width: 100%;
+
 }
 
 #section-contact {
   background: url('./img/SW3.jpg');
   background-size: cover;
+  max-width: 100%;
 }
 
 #section-other {
@@ -31,15 +38,14 @@
 
 .header {
   position:fixed;
-  height: 70px;
+  height: 50px;
   width: 100%;
   background: #ccc;
-  z-index:9;
+  z-index:99999;
   text-align:right;
   font-size: xx-large;
   color: #000;
-  top:0px;
-  
+  top:0;
   border: 1px solid green;
 }
 

@@ -7,26 +7,26 @@ const anchors = ['Portfolio', 'About-me', 'Contact', 'Other-projects'];
 
 function App() {
   return (
+    <div className='portfolio'>
+      <div className='header'>
+        <div className="container">
+          <div className='link'><a href="#section-portfolio">Portfolio</a></div>
+          <div className='link'><a href="#section-about">About me</a></div>
+          <div className='link'><a href="#section-contact">Contact</a></div>
+          <div className='link'><a href="#section-other">Other projects</a></div>
+        </div>
+      </div>
+      <ReactFullpage
+        //fullpage options
+        licenseKey={'YOUR_KEY_HERE'}
+        scrollingSpeed={1000} /* Options here */
+        anchors={anchors}
+        navigation
+        navigationTooltips={anchors}
 
-    <ReactFullpage
-      //fullpage options
-      licenseKey={'YOUR_KEY_HERE'}
-      scrollingSpeed={500} /* Options here */
-      anchors={anchors}
-      navigation
-      navigationTooltips={anchors}
-      
-      render={({ state, fullpageApi }) => {
-        return (
-          <div className='portfolio'>
-            <div className='header'>
-              <div className="container">
-                <div className='link'><a href="#section-portfolio">Portfolio</a></div>
-                <div className='link'><a href="#section-portfolio">About me</a></div>
-                <div className='link'><a href="#section-contact">Contact</a></div>
-                <div className='link'><a href="#section-other">Other projects</a></div>
-              </div>
-            </div>
+        render={({ state, fullpageApi }) => {
+          return (
+
             <ReactFullpage.Wrapper>
               <div className="section" id='section-portfolio'>
                 <p>Portfolio:</p>
@@ -41,10 +41,11 @@ function App() {
                 <p>Other projects</p>
               </div>
             </ReactFullpage.Wrapper>
-          </div>
-        );
-      }}
-    />
+
+          );
+        }}
+      />
+    </div>
   );
 }
 
