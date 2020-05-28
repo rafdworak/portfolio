@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ReactFullpage from '@fullpage/react-fullpage';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ReactFullpage
+    //fullpage options
+    licenseKey = {'YOUR_KEY_HERE'}
+    scrollingSpeed = {1000} /* Options here */
+    
+    render={({ state, fullpageApi }) => {
+      return (
+        <ReactFullpage.Wrapper>
+          <div className="section" id='section-portfolio'>
+            <p>Portfolio:</p>
+            <button onClick={() => fullpageApi.moveSectionDown()}>
+              Click me to move down
+            </button>
+          </div>
+          <div className="section"id='section-about'>
+              <p>About me</p>
+          </div>
+          <div className="section" id='section-contact'>
+            <p>Contact</p>
+          </div>
+          <div className="section" id='section-other'>
+            <p>Other projects</p>
+          </div>
+        </ReactFullpage.Wrapper>
+      );
+    }}
+  />
   );
 }
 
