@@ -1,0 +1,11 @@
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
+  background-color: gray;
+}
+.fp-controlArrow.fp-next {
+    right: 40px !important;
+    border-color: transparent transparent transparent blue;
+}
+

@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
+import './override.css';
 import ReactFullpage from '@fullpage/react-fullpage';
+
 
 const anchors = ['Portfolio', 'About-me', 'Contact', 'Other-projects'];
 
@@ -29,7 +31,8 @@ function App() {
 
             <ReactFullpage.Wrapper>
               <div className="section" id='section-portfolio'>
-                <p>Portfolio:</p>
+                <div class="slide" id='kodflix'> Slide 1 </div>
+                <div class="slide"> Slide 2 </div>
               </div>
               <div className="section" id='section-about'>
                 <p>About me</p>
@@ -50,3 +53,4 @@ function App() {
 }
 
 export default App;
+
