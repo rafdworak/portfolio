@@ -1,7 +1,7 @@
 
 
 #section-portfolio {
-  background: url('./img/SW2.jpg') no-repeat center center fixed;
+  background: url('./img/SW2.jpg') ;
   background-size: cover;
 }
 
@@ -55,22 +55,22 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   
   #section-portfolio {
-    background: url('./img/SW2_2.jpg') no-repeat center center fixed;
+    background: url('./img/SW2_2.jpg') ;
     background-size: cover;
   }
 
   #section-about {
-    background: url('./img/SW_2.jpg') no-repeat center center fixed;
+    background: url('./img/SW_2.jpg');
     background-size: cover;
   }
 
   #section-contact {
-    background: url('./img/SW3_2.jpg') no-repeat center center fixed;
+    background: url('./img/SW3_2.jpg') ;
     background-size: cover;
   }
 
   #section-other {
-    background: url('./img/boat_2.jpg') no-repeat center center fixed;
+    background: url('./img/boat_2.jpg') ;
     background-size: cover;
   }
   
