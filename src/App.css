@@ -61,7 +61,7 @@ h3 {
   display:flex;
 }
 .container-icons .logo{
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .link{
@@ -90,6 +90,8 @@ h3 {
     background: url('./img/boat_2.jpg') ;
     background-size: cover;
   }
-  
+  .header{
+    font-size: large;
+  }
   
 }
