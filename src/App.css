@@ -37,7 +37,7 @@
   width: 100%;
   background: #ccc;
   z-index:99999;
-  text-align:right;
+  text-align:center;
   font-size: xx-large;
   color: #000;
   top:0;
@@ -52,12 +52,34 @@
   flex:1;
 }
 
+//tablets
 @media (min-width: 768px) and (max-width: 1024px) {
   
   #section-portfolio {
     background: url('./img/SW2_2.jpg') no-repeat center center fixed;
     background-size: cover;
   }
+
+  #section-about {
+    background: url('./img/SW_2.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  #section-contact {
+    background: url('./img/SW3_2.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  #section-other {
+    background: url('./img/boat_2.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  
+}
+//low ress tablets and landscape
+@media (min-width: 481px) and (max-width: 767px) {
+  
   
   
 }
