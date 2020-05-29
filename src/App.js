@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './override.css';
 import ReactFullpage from '@fullpage/react-fullpage';
+import linkedin from './img/linkedin.svg';
 
 
 const anchors = ['Portfolio', 'About-me', 'Contact', 'Other-projects'];
@@ -11,7 +12,11 @@ function App() {
   return (
     <div className='portfolio'>
       <div className='header'>
-        <div className="container">
+        <div className='container-icons'>
+          <div><a href='https://www.linkedin.com/in/rdworak/'><img src = {linkedin}></img></a></div>
+        </div>
+        
+        <div className="container-navi">
           <div className='link'><a href="#section-portfolio">Portfolio</a></div>
           <div className='link'><a href="#section-about">About me</a></div>
           <div className='link'><a href="#section-contact">Contact</a></div>
@@ -31,17 +36,17 @@ function App() {
 
             <ReactFullpage.Wrapper>
               <div className="section" id='section-portfolio'>
-                <div class="slide" id='kodflix'> Slide 1 </div>
-                <div class="slide"> Slide 2 </div>
+                <div class="slide" id='kodflix'><h3>Kodflix</h3></div>
+                <div class="slide" id='TBC'><h3>TBC</h3> </div>
               </div>
               <div className="section" id='section-about'>
-                <p>About me</p>
+                <h3>About me</h3>
               </div>
               <div className="section" id='section-contact'>
-                <p>Contact</p>
+                <h3>Contact</h3>
               </div>
               <div className="section" id='section-other'>
-                <p>Other projects</p>
+                <h3>Other projects</h3>
               </div>
             </ReactFullpage.Wrapper>
 
