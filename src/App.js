@@ -3,6 +3,7 @@ import './App.css';
 import './override.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import linkedin from './img/linkedin.svg';
+import github from './img/github.svg';
 
 
 const anchors = ['Portfolio', 'About-me', 'Contact', 'Other-projects'];
@@ -13,7 +14,8 @@ function App() {
     <div className='portfolio'>
       <div className='header'>
         <div className='container-icons'>
-          <div><a href='https://www.linkedin.com/in/rdworak/'><img src = {linkedin}></img></a></div>
+          <div className='logo'><a href='https://www.linkedin.com/in/rdworak/'><img src = {linkedin}></img></a></div>
+          <div className='logo'><a href='https://github.com/rafdworak'><img src = {github}></img></a></div>
         </div>
         
         <div className="container-navi">
@@ -58,4 +60,6 @@ function App() {
 }
 
 export default App;
-
+/*
+<div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+*/
