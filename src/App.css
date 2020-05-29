@@ -52,7 +52,6 @@
   flex:1;
 }
 
-//tablets
 @media (min-width: 768px) and (max-width: 1024px) {
   
   #section-portfolio {
@@ -74,12 +73,6 @@
     background: url('./img/boat_2.jpg') no-repeat center center fixed;
     background-size: cover;
   }
-  
-  
-}
-//low ress tablets and landscape
-@media (min-width: 481px) and (max-width: 767px) {
-  
   
   
 }
