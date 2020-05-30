@@ -3,7 +3,7 @@ a{
   text-decoration: none;
 }
 h2{
-  font-family: fantasy;
+  font-family: Impact;
   text-align: center;
   color: white;
   font-size: 3em;
@@ -11,7 +11,7 @@ h2{
 
 h3 {
   font-size: 5em;
-  font-family: fantasy;
+  font-family: Impact;
   text-align: center;
   color: #fff;
   font-weight: 700;
@@ -57,7 +57,7 @@ h3 {
   z-index:99999;
   text-align:center;
   font-size: xx-large;
-  font-family: fantasy;
+  font-family: Impact;
   color: white;
   top:0;
 }
