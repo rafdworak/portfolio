@@ -12,12 +12,8 @@ const anchors = ['Portfolio', 'About-me', 'Contact', 'Other-projects'];
 function App() {
   return (
     <div className='portfolio'>
+      
       <div className='header'>
-        <div className='container-icons'>
-          <div className='logo'><a href='https://www.linkedin.com/in/rdworak/'><img src = {linkedin}></img></a></div>
-          <div className='logo'><a href='https://github.com/rafdworak'><img src = {github}></img></a></div>
-        </div>
-        
         <div className="container-navi">
           <div className='link'><a href="#section-portfolio">Portfolio</a></div>
           <div className='link'><a href="#section-about">About me</a></div>
@@ -25,6 +21,14 @@ function App() {
           <div className='link'><a href="#section-other">Other projects</a></div>
         </div>
       </div>
+      <div className='footer'>
+        <div className='container-icons'>
+          <div className='logo'><a href='https://www.linkedin.com/in/rdworak/'><img src={linkedin}></img></a></div>
+          <div className='logo'><a href='https://www.linkedin.com/in/rdworak/'><img src={github}></img></a></div>
+        </div>
+      </div>
+
+
       <ReactFullpage
         //fullpage options
         licenseKey={'YOUR_KEY_HERE'}
@@ -38,7 +42,9 @@ function App() {
 
             <ReactFullpage.Wrapper>
               <div className="section" id='section-portfolio'>
-                <div class="slide" id='kodflix'><h3>Kodflix</h3></div>
+                <div class="slide" id='kodflix'><h3>Kodflix</h3>
+                  <h2>A full stack project simulating the production of Netflix.</h2>
+                </div>
                 <div class="slide" id='TBC'><h3>TBC</h3> </div>
               </div>
               <div className="section" id='section-about'>
