@@ -23,7 +23,7 @@ h3 {
 }
 
 #section-about {
-  background: url('./img/SW.jpg');
+  background: url('./img/SW5.jpg');
   background-size: cover;
 
 }
@@ -40,13 +40,8 @@ h3 {
 }
 
 #section-other {
-  background: url('./img/boat.jpg');
+  background: url('./img/SW4.jpg');
   background-size: cover;
-}
-
-
-.App-link {
-  color: #61dafb;
 }
 
 .header {
@@ -90,9 +85,14 @@ h3 {
 
 .container-icons{
  display:flex;
+ 
 }
 .container-icons .logo{
   padding-left: 30px;
+}
+.container-icons img:last-child{
+  width:35px;
+  height:35px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

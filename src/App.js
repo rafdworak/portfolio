@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 import './override.css';
 import ReactFullpage from '@fullpage/react-fullpage';
-import linkedin from './img/linkedin.svg';
-import github from './img/github.svg';
+import linkedin from './img/linkedin.png';
+import github from './img/github-logo.png';
+import youtube from './img/youtube.png';
+
 
 
 const anchors = ['Portfolio', 'About-me', 'Contact', 'Other-projects'];
@@ -12,7 +14,7 @@ const anchors = ['Portfolio', 'About-me', 'Contact', 'Other-projects'];
 function App() {
   return (
     <div className='portfolio'>
-      
+
       <div className='header'>
         <div className="container-navi">
           <div className='link'><a href="#section-portfolio">Portfolio</a></div>
@@ -25,6 +27,8 @@ function App() {
         <div className='container-icons'>
           <div className='logo'><a href='https://www.linkedin.com/in/rdworak/'><img src={linkedin}></img></a></div>
           <div className='logo'><a href='https://www.linkedin.com/in/rdworak/'><img src={github}></img></a></div>
+          <div className='logo'><a href='https://www.linkedin.com/in/rdworak/'><img src={youtube}></img></a></div>
+
         </div>
       </div>
 
